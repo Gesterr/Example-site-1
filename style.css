@@ -1,0 +1,125 @@
+html,body{
+	padding: 0;
+	margin: 0;
+}
+
+.row{
+	background-color: #1A1A19;
+	min-height: 92vh;
+	height: auto;
+}
+
+/* Шапка сайта  */
+.header{
+	background-color: black;
+	height: 8vh;
+	width: 100%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom: 1px solid #292928;
+	text-align: center;
+}
+/* Задний фон шапки сайта */
+.header1{
+	background-color: #1A1A19;
+	height: 8vh;
+}
+/* Левый блок сайта */
+.left{
+	height: auto;
+	border-right: 1px solid #292928;
+	color: white;
+	border-top: 1px solid #292928;
+	border-bottom: 1px solid #292928;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	min-height: 100vh;
+	height: auto;
+}
+/* Правый блок сайта */
+.right{
+	border-top: 1px solid #292928;
+	padding: 0;
+	text-align: center;
+	max-height: auto;
+	min-height: 92vh;
+}
+/* Параметры шрифта в шапке сайта */
+.head-text{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	font-size: 8vh;
+	font-family: 'Grenze', serif;
+}
+/* Конфигурация блоков сайта */
+.block{
+	height: 225px;
+	width: 275px;
+	border: 2px solid white;
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 10px;
+	border-radius: 10px;
+	text-align: left;
+}
+
+
+/* Класс под картинки */
+.img{
+	position: absolute;
+	border-radius: 10px;
+	height: 220px;
+	width: 270px;
+}
+/* При касании класса block изменялся размер и размыливался фон */
+.block:hover  .img{
+	filter: blur(2px);
+	transform: scale(1.1);
+}
+/* При касании класса block изменялась видимость текста внутри блока */
+.block:hover .textt{
+	opacity: 1;
+}	
+
+/* Текст внутри картинки */
+.textt{
+	top:40%;
+    font-size:25px;
+    font-weight:bold;
+    position:relative;
+    opacity: 0.1;	
+}
+
+
+.pos{
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+
+/* Код выше для всей херни правой части сайта */
+
+
+
+/* Эта хрень относится к левой части */
+/* Это класс на изменение поля где находится текст*/
+.dop{
+	width: 95%;
+	border: 2px solid #292928;
+	color: #5B5B5B;
+	border-radius: 10px;
+	list-style-type: none;
+	padding-left: 15px;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Grense',serif;
+	margin-top: 20px;
+}
+
+.dop1{
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
