@@ -62,6 +62,7 @@ html,body{
 	margin-top: 10px;
 	border-radius: 10px;
 	text-align: left;
+	transition: 0.8s;
 }
 
 
@@ -76,11 +77,24 @@ html,body{
 .block:hover  .img{
 	filter: blur(2px);
 	transform: scale(1.1);
+	transition: 0.8s;
 }
 /* При касании класса block изменялась видимость текста внутри блока */
 .block:hover .textt{
 	opacity: 1;
-}	
+	transition: 0.8s;
+}
+/* После того как мышка уходи с блока он плавно переходит в прошлое состояние */
+.block .img{
+	filter: blur(0);
+	transform: scale(1);
+	transition: 0.8s;
+}
+
+.block .textt{
+	opacity: 0.1;
+	transition: 0.8s
+}
 
 /* Текст внутри картинки */
 .textt{
@@ -91,7 +105,7 @@ html,body{
     opacity: 0.1;	
 }
 
-
+/* Позиционирование текста внутри блока */
 .pos{
 	text-align: center;
 	height: 100%;
