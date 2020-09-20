@@ -24,18 +24,6 @@ html,body{
 	background-color: #1A1A19;
 	height: 8vh;
 }
-/* Левый блок сайта */
-.left{
-	height: auto;
-	border-right: 1px solid #292928;
-	color: white;
-	border-top: 1px solid #292928;
-	border-bottom: 1px solid #292928;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	min-height: 100vh;
-	height: auto;
-}
 /* Правый блок сайта */
 .right{
 	border-top: 1px solid #292928;
@@ -63,7 +51,6 @@ html,body{
 	border-radius: 10px;
 	text-align: left;
 	vertical-align: middle;
-
 	transition: 0.8s;
 }
 
@@ -122,20 +109,54 @@ html,body{
 
 /* Эта хрень относится к левой части */
 /* Это класс на изменение поля где находится текст*/
-.dop{
-	width: 95%;
-	border: 2px solid #292928;
-	color: #5B5B5B;
-	border-radius: 10px;
-	list-style-type: none;
-	padding-left: 15px;
-	font-size: 25px;
-	font-weight: bold;
-	font-family: 'Grense',serif;
-	margin-top: 20px;
+/* Левый блок сайта */
+#left{
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 70px;
 }
-
-.dop1{
-	margin-top: 70px;
-	margin-bottom: 70px;
+#left.active{
+	height: 200px;
+}
+/* Ячейка сайта под About Us */
+#item{
+	background-color: #1A1A19;
+	color:white;
+	padding: 16px;
+	font-size: 16px;
+	border: 2px solid #292928;
+	cursor: pointer;
+	width: 221px;
+	padding-left: 30px;
+	margin-left: 10px;
+}
+/* Что происходит при наведении на блок под About Us */
+#item:hover, #items:focus{
+	background-color: #292928;
+}
+/* Площадка под всю анимацию */
+.menu{
+	position: relative;
+	display: inline-block;
+}
+/* Само выпадающее оконо с ссылками */
+#submenu{
+	display: none;
+	position: absolute;
+	background-color: #1A1A19;
+	border: 2px solid #292928;
+	margin-left: 10px;
+	min-width: 221px;
+}
+/* Конфигурация текста в выпадающем окне */
+#submenu a{
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+/* Что происходит при наведении на текст в выпадающем окне */
+#submenu a:hover{
+	background-color: #292928;
 }
